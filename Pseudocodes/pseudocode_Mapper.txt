@@ -1,0 +1,21 @@
+Get the array/input.
+
+Determine size of array.
+Convert to 2D array.
+
+Find start and end pts.
+Loop that searches the first column, and last column.
+
+Create a generation_map map of 0's the exact same size as the input map.
+Set start position to 1 on the generation_map.
+
+loop forever:
+  Check surroundings for a valid move.
+  Set the next valid "step" to be parent+1.
+
+  check if at end_position:
+    stop loop
+  else:
+    continue until invalid.
+
+Check for nearest lowest number from the end_position and backtrack.

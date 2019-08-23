@@ -54,8 +54,12 @@ while True:
     if generation_map[end_postition[0]][end_postition[1]] != 0:
         break
 
-# for line in generation_map:
-#     print(' '.join(str(x) for x in line))
+with open('generation_map.txt', 'r+') as sol_file:
+    for line in generation_map:
+        for num in line:
+            spaces_to_add = 3-len(str(num))
+            sol_file.write(str(num)+(' '*spaces_to_add))
+
 
 top_generation = generation
 pos_to_check = [end_postition]
