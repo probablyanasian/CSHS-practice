@@ -57,9 +57,9 @@ while True:
 with open('generation_map.txt', 'r+') as sol_file:
     for line in generation_map:
         for num in line:
-            spaces_to_add = 3-len(str(num))
+            spaces_to_add = 4-len(str(num))
             sol_file.write(str(num)+(' '*spaces_to_add))
-
+        sol_file.write('\n')
 
 top_generation = generation
 pos_to_check = [end_postition]
