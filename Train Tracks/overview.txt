@@ -1,0 +1,10 @@
+The file Prob10.in.txt will contain a set of train station names, tracks, barriers, and switches.
+•	Train tracks are denoted by an equal sign (=).  Each track has a start station and an end station.  Trains move from left to right.
+•	Station names will always be three characters and will appear at the beginning and end of a track.  Station names are not necessarily unique.
+•	Between two adjacent tracks will be barriers and switches.  Barriers are denoted by a minus sign (-), and switches are denoted by a vertical bar (|).  When a train reaches a switch, it will always crossover to the neighboring track.  For example:
+•	Switches will never connect directly to a station – they can only connect two track pieces.
+•	If the situation occurs where it’s possible for a train to switch to either of the two neighboring tracks, the train will always move in the “upward” direction.  Also, switches can be used to cross multiple tracks if they line up correctly.
+
+
+For each starting station, list the ending station for a train leaving from that starting station in the following form:
+Start: StartStation, End: EndStation
